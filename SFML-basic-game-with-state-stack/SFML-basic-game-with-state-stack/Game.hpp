@@ -13,8 +13,8 @@
 
 
 const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
-const int WINDOW_WIDTH = 800;
-const int WINDOW_HEIGHT = 300;
+const int WINDOW_WIDTH = 600;
+const int WINDOW_HEIGHT = 600;
 
 const std::string MEDIA_FOLDER = "Media/";
 const std::string FONTS_FOLDER = MEDIA_FOLDER + "Fonts/";
@@ -37,7 +37,7 @@ public:
 		//_sounds.load(Sounds::Key, SOUNDS_FOLDER + "key.wav");
 		
 
-		//_textures.load(Textures::TitleScreen, TEXTURES_FOLDER + "TitleScreen.png");
+		_textures.load(Textures::GUI, TEXTURES_FOLDER + "GUI.png");
 		
 		auto menuState = std::make_shared<MenuState>(_stateStack, State::Context(_window, _textures, _fonts, _musics, _sounds));
 		_stateStack.pushState(menuState);

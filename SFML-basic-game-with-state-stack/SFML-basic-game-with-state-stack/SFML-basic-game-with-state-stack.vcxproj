@@ -91,6 +91,7 @@
     <None Include="ResourceHolder.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="GameState.hpp" />
     <ClInclude Include="MenuState.hpp" />

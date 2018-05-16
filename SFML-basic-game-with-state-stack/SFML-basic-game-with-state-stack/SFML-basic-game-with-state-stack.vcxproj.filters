@@ -28,6 +28,9 @@
     <Filter Include="Archivos de código fuente\Utilities">
       <UniqueIdentifier>{3861fb82-f6b9-4dd6-b961-191e3a359b7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GUI Components">
+      <UniqueIdentifier>{b2872d25-f756-4af7-aa07-503324da3636}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="Rand.hpp">
       <Filter>Archivos de encabezado\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
+      <Filter>Archivos de encabezado\GUI Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

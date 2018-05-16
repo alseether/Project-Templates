@@ -4,14 +4,20 @@
 #include "ResourceHolder.hpp"
 
 GameState::GameState(StateStack& stack, Context context) :
-State(stack,context)
+State(stack,context),
+random()
 {
 	m_count = 0;
+
+	int r1 = random.getRandom(0, 100);
+	double r2 = random.getRandom(0.0, 1.0);
 
 	m_text.setFont(context.fonts->get(Fonts::Main));
 	m_text.setString("GameState: " + std::to_string(m_count) + " Esc = Pause, M = Menu");
 	m_text.setPosition(10, 10);
 	m_text.setFillColor(sf::Color::White);
+
+
 
 }
 

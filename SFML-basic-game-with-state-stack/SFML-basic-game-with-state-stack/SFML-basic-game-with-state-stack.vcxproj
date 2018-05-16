@@ -84,6 +84,7 @@
     <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateStack.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -94,10 +95,12 @@
     <ClInclude Include="GameState.hpp" />
     <ClInclude Include="MenuState.hpp" />
     <ClInclude Include="PauseState.hpp" />
+    <ClInclude Include="Rand.hpp" />
     <ClInclude Include="ResourceHolder.hpp" />
     <ClInclude Include="ResourceIdentifiers.hpp" />
     <ClInclude Include="State.hpp" />
     <ClInclude Include="StateStack.hpp" />
+    <ClInclude Include="Utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

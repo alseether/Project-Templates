@@ -1,6 +1,7 @@
 #include "PauseState.hpp"
 #include "MenuState.hpp"
 #include "ResourceHolder.hpp"
+#include "Utils.hpp"
 
 
 PauseState::PauseState(StateStack& stack, Context context)
@@ -8,11 +9,11 @@ PauseState::PauseState(StateStack& stack, Context context)
 {
 	m_text.setFont(context.fonts->get(Fonts::Main));
 	m_text.setString("PauseState: press ESC to return, M to menu");
+	centerOrigin(m_text);
 	auto pos = context.window->getSize();
 	pos.x *= 0.5;
 	pos.y *= 0.5;
-	int textSize = m_text.getLocalBounds().width * 0.5;
-	m_text.setPosition(pos.x-textSize,pos.y);
+	m_text.setPosition(pos.x,pos.y);
 	m_text.setFillColor(sf::Color::White);
 
 }

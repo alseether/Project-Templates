@@ -3,6 +3,7 @@
 
 #include <SFML\Graphics.hpp>
 #include "State.hpp"
+#include "Rand.hpp"
 
 class GameState : public State{
 public:
@@ -17,6 +18,7 @@ public:
 private:
 	sf::Text m_text;
 	unsigned int m_count;
+	Rand random;
 };
 
 #endif

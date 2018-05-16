@@ -13,7 +13,7 @@
 
 
 const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
-const int WINDOW_WIDTH = 600;
+const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 300;
 
 const std::string MEDIA_FOLDER = "Media/";
